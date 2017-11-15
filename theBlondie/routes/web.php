@@ -18,13 +18,13 @@ Route::get('/index', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/signin', function () {
-    return view('signin');
-});
+Route::get('/signin', function () {return view('signin');});
 
-Route::post('/signin', function () {
-    return view('signin');
-});
+Route::post('/signin', function () {return view('signin');});
+
+Route::get('/zapatos', 'zapatosController@show')->name('zapatos');
+Route::get('/faq', 'faqController@show')->name('faq');
+
 Auth::routes();
 
 

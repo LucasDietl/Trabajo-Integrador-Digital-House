@@ -1,25 +1,15 @@
-<?php require_once("../../html/soporte.php");?>
-<?php
-if($_POST){
-    if($_POST["button"]){
-        $auth->logout();
-        header("location:home.php");exit;
-    }};
-?>
 @extends('layout')
-<!DOCTYPE html>
-<html>
-<head>
+
     @section('title')
     <title>The Blondie - Shoes</title>
-        @endsection
-</head>
+    @endsection
+
 
 <body class="bgcolorhome">
 
 <!-- NOTE: Navbar start -->
 @section('navbar')
-<?php require_once("../../html/navbar.php"); ?>
+
 @endsection
 <!-- NOTE: Navbar end -->
 
@@ -40,7 +30,7 @@ if($_POST){
 
 <!-- NOTE: Footer start -->
 @section('footer')
-<?php require_once("../../html/footer.php"); ?>
+
 @endsection
 <!-- NOTE: Footer end -->
 

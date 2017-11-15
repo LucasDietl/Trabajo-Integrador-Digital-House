@@ -1,23 +1,35 @@
-@extends('layouts.app')
+@extends('layout')
+    @section('title')
+        <title>The Blondie - Shoes</title>
+    @endsection
 
+<!-- NOTE: Navbar start -->
+@section('navbar')
+
+@endsection
+<!-- NOTE: Navbar end -->
+
+<!-- NOTE: introduccion start -->
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
+    <div class="slideimages" style="display: flex;">
+        <div class="slideshow" style="">
+            <img src="{{asset('images/dorada.jpg')}}" class="izquierda" style="" alt="">
+            <img src="{{asset('images/blackwhite.jpg')}}" class="derecha" alt="">
+            <img src="{{asset('images/comingsoon.jpg')}}" class="medio" alt="">
+            <img src="{{asset('images/skate.jpg')}}" class="izquierda" alt="">
+            <img src="{{asset('images/piernasyzapatos.jpg')}}" class="derecha" alt="">
+            <img src="{{asset('images/cactuswide.jpg')}}" class="medio" alt="">
         </div>
     </div>
-</div>
 @endsection
+<!-- NOTE: introduccion end -->
+
+<!-- NOTE: Footer start -->
+@section('footer')
+
+@endsection
+<!-- NOTE: Footer end -->
+
+
+
+
