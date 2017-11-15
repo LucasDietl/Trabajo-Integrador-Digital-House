@@ -34,17 +34,22 @@
                 <div class="container-fluid">
                     <div class="row ">
                         <div class="col-sm-4">
-                            @if(Auth::user())
+                            @if(!Auth::check())
                             <p>Boton de cerrar sesion</p>
-                            @endif
+                            @else
+                            <ul>
+                                <li><a href="{{ route('login') }}">Log In</a></li>
+                                <li><a href="{{ route('register') }}">Register</a></li>
+                            </ul>
+                                @endif
                         </div>
                         <div class="col-sm-4 hidden-xs">
                             <div class="">
                                 <form class="navbar-form" role="search" method="get" action="{{ route('zapatos') }}">
                                     <div class="inner-addon left-addon">
-                                        <button type="submit"class="btn search">
+                                        <button type="submit" class="btn search">
                                             <span class="glyphicon glyphicon-search"></span></button>
-                                        <input class="barra_busqueda" type="text" placeholder="Buscar" class="form-control" />
+                                        <input class="barra_busqueda form-control" type="text" placeholder="Buscar" />
                                     </div>
                                 </form>
 
