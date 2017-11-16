@@ -1,6 +1,6 @@
 *{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -9,7 +9,7 @@
   background: #000000!important;
   min-height: 100px;
   border-color: transparent!important;
-  box-shadow: 0px 3px 25px #666666;
+  box-shadow: 0 3px 25px #666666;
   padding-left: 60px; padding-right: 60px;
 }
 
@@ -33,10 +33,10 @@ text-decoration: underline!important;
   border-radius: 5px;
 }
 .carrrito_padding{
-  padding: 15px 0px;
+  padding: 15px 0;
 }
 .padding_SignInAndUp{
-  padding: 15px 0px!important;
+  padding: 70px 0;
 }
 .btnbuscar {
   background: #eb28e4;
@@ -49,29 +49,29 @@ text-decoration: underline!important;
   -moz-border-radius: 28px;
   border-radius: 28px;
   text-shadow: 1px 1px 3px #666666;
-  -webkit-box-shadow: 0px 1px 3px #666666;
-  -moz-box-shadow: 0px 1px 3px #666666;
-  box-shadow: 0px 1px 3px #666666;
-  font-family: Sunshiney;
+  -webkit-box-shadow: 0 1px 3px #666666;
+  -moz-box-shadow: 0 1px 3px #666666;
+  box-shadow: 0 1px 3px #666666;
+  font-family: 'Sunshiney';
   font-size: 1.3em;
   color: #ffffff;
   /*font-size: 15px;*/
   padding: 5px 15px 5px 15px;
   text-decoration: none;
-  border-width: 0px!important;
+  border-width: 0!important;
   transition: 300ms;
 }
 .hamburgesa{
   margin-top: 40px;
 }
 .barra_busqueda{
-  border: 0px transparent!important;
+  border: 0 transparent!important;
   color: white;
   box-shadow: none;
-  margin-left: 0px;
+  margin-left: 0;
   width: 100px;
   background-color: #000000;
-  border-radius: 0px;
+  border-radius: 0;
 }
 .barra_busqueda::-webkit-input-placeholder{
     color: white;
@@ -83,6 +83,48 @@ font-size: 30px;
 height: 30px;
 width: 30px;
 
+}
+.fa-facebook{
+    content: '';
+    display: block;
+    height: 40px;  /*height of icon */
+    width: 40px;  /*width of icon */
+    position: absolute;
+    /*where to replace the icon */
+    top: 0;
+    left: -40px;
+    /*background */
+    background-image: url('../images/facebook.ico');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fa-twitter{
+    content: '';
+    display: block;
+    height: 40px;  /*height of icon */
+    width: 40px;  /*width of icon */
+    position: absolute;
+    /*where to replace the icon */
+    top: 0;
+    left: -40px;
+    /*background */
+    background-image: url('../images/twitter.ico');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fa-instagram{
+    content: '';
+    display: block;
+    height: 40px;  /*height of icon */
+    width: 40px;  /*width of icon */
+    position: absolute;
+    /*where to replace the icon */
+    top: 0;
+    left: -40px;
+    /*background */
+    background-image: url('../images/Instagram.ico');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .iconos{
   padding-top: 35px;
@@ -144,7 +186,7 @@ width: 30px;
   margin-top: 170px; /* NOTE: este margen es para que todo lo que pongas debajo del navbar no sea tapado por el mismo */
 }
 .slideshow{
-padding: 0px!important;
+padding: 0!important;
 background-size: cover;
 }
 .slideshow .izquierda{
@@ -203,14 +245,14 @@ text-align: center;
 
 
 .signin {
-  padding: 40px 0px 40px 0px;
+  padding: 40px 0 40px 0;
   /*padding-bottom: 40px;*/
   background-color: #eee;
 }
 
 .form-signin {
   max-width: 330px;
-  padding: 50px 0px 15px 0px;
+  padding: 50px 0 15px 0;
   margin: 0 auto;
 }
 .form-signin .form-signin-heading,
@@ -363,7 +405,7 @@ footer h3{
 .fondobody2{
   background-image: url("../images/shoelover.jpg");
   background-size: cover;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 /* NOTE: FAQS ends */
 
@@ -394,7 +436,7 @@ footer h3{
 }
 
 .signup-form label{
-     margin: 0px 0px 0px 10px;
+     margin: 0 0 0 10px;
      font-size: 10px !important;
      color: white;
 
@@ -418,7 +460,7 @@ footer h3{
 .signup-form-input{
      background-color: rgba(255, 0, 0, 0.1);
      width: 90%;
-     margin: -3px 0px 15px 10px;
+     margin: -3px 0 15px 10px;
      font-family: Sunshiney;
      font-size: 1.3em;
      color: white;
@@ -472,7 +514,6 @@ footer h3{
 }
 .custom-upload{
     width: 100%;
-    height: auto;
     height: 50px;
 
 }

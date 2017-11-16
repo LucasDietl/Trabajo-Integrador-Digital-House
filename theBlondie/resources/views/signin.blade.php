@@ -19,7 +19,7 @@
         <div class="row margen">
             <div class="col-xs-12 col-sm-4 col-md-4">
 
-                <form class="form-horizontal" role="form" action="signin" method="post">
+                <form class="form-horizontal" role="form" action="{{ route('signin') }}" method="post">
                     {{ csrf_field() }}
                     <div class="form-group">
 

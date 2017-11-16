@@ -6,8 +6,7 @@
     <link rel="icon" type="image/png" href="{{asset('images/favicon.png')}}">
     <meta name="viewport"content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney|Yesteryear|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     @yield('title')
 </head>
@@ -34,12 +33,22 @@
                 <div class="container-fluid">
                     <div class="row ">
                         <div class="col-sm-4">
-                            @if(!Auth::check())
-                            <p>Boton de cerrar sesion</p>
+                            @if(Auth::check())
+                                <ul>
+                                    <li class="inlineblock" ><a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                                        Logout
+                                        </a></li>
+                                    <li class="inlineblock white">Bienvenido {{Auth::user()->name}}</li>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </ul>
                             @else
                             <ul>
-                                <li><a href="{{ route('login') }}">Log In</a></li>
-                                <li><a href="{{ route('register') }}">Register</a></li>
+                                <li class="inlineblock" ><a href="{{ route('login') }}">Log In</a></liclass>
+                                <li class="inlineblock" ><a href="{{ route('register') }}">Register</a></li>
                             </ul>
                                 @endif
                         </div>
@@ -82,9 +91,15 @@
                         </ul>
                     </div>
                     <div class="col-md-2 hidden-xs hidden-sm text-center iconos">
-                        <a href="https://www.facebook.com/theblondieok/"><i class="fa fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/theblondieok/?hl=es"><i class="fa fa-instagram"></i></a>
-                        <a href="https://twitter.com/theblondieok" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <div>
+                            <a href="https://www.facebook.com/theblondieok/"><i class="fa fa-facebook-square fa-facebook"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/theblondieok/?hl=es"><i class="fa fa-instagram fa-instagram"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/theblondieok"><i class="fa fa-twitter fa-twitter"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,7 +107,7 @@
     </nav>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     @yield('content')
     <footer class="navbar navbar-default navbar-bottom" role="navigation">
         <div class="container-fluid hidden-xs">

@@ -11,15 +11,14 @@
 |
 */
 
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('index');
 });
 
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/signin', function () {return view('signin');});
-Route::post('/signin', function () {return view('signin');});
+Route::get('/signin', 'SignInController@show')->name('signin');
+Route::post('/signin', 'SignInController@validator')->name('signin');
 
 Route::get('/zapatos', 'zapatosController@show')->name('zapatos');
 Route::get('/faq', 'faqController@show')->name('faq');
