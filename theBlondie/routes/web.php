@@ -15,14 +15,18 @@ Route::get('/', function () {
     return view('index');
 });
 
-
+/* Rutas para los usuarios START*/
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/signin', 'SignInController@show')->name('signin');
 Route::post('/signin', 'SignInController@validator')->name('signin');
-
 Route::get('/zapatos', 'zapatosController@show')->name('zapatos');
 Route::get('/faq', 'faqController@show')->name('faq');
 
 Auth::routes();
+/* Rutas para los usuarios END*/
 
 
+/*Rutas para los administradores START*/
+
+
+/*Rutas para los administradores END*/

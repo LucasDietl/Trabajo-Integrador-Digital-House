@@ -91,8 +91,8 @@ width: 30px;
     width: 40px;  /*width of icon */
     position: absolute;
     /*where to replace the icon */
-    top: 0;
-    left: -40px;
+    top: 30px;
+    left: 0;
     /*background */
     background-image: url('../images/facebook.ico');
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@ width: 30px;
     width: 40px;  /*width of icon */
     position: absolute;
     /*where to replace the icon */
-    top: 0;
+    top: 30px;
     left: -40px;
     /*background */
     background-image: url('../images/twitter.ico');
@@ -119,8 +119,8 @@ width: 30px;
     width: 40px;  /*width of icon */
     position: absolute;
     /*where to replace the icon */
-    top: 0;
-    left: -40px;
+    top: 30px;
+    left: 40px;
     /*background */
     background-image: url('../images/Instagram.ico');
     background-repeat: no-repeat;
