@@ -19,7 +19,7 @@ class CrearTablaProductos extends Migration
             $table->string('sku');
             $table->string('color');
             $table->integer('stock');
-            $table->decimal('float',8,2);
+            $table->decimal('precio',8,2);
             $table->timestamps();
         });
     }
