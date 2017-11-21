@@ -47,7 +47,7 @@
                                 </ul>
                             @else
                             <ul>
-                                <li class="inlineblock" ><a href="{{ route('login') }}">Log In</a></liclass>
+                                <li class="inlineblock" ><a href="{{ route('login') }}">Log In</a></li>
                                 <li class="inlineblock" ><a href="{{ route('register') }}">Register</a></li>
                             </ul>
                                 @endif
@@ -86,8 +86,8 @@
                         <ul class="nav navbar-nav inline">
                             <li class="active inlineblock"> <span class="sr-only">(current)</span></li>
                             <li class="inlineblock"><a href="{{ route('home') }}">Home</a></li>
-                            <li class="inlineblock"><a href="{{ route('zapatos') }}">Zapatos</a></li>
-                            <li class="inlineblock"><a href="{{ route('faq') }}">Preguntas Frecuentes</a></li>
+                            <li class="inlineblock"><a href="/zapatos">Zapatos</a></li>
+                            <li class="inlineblock"><a href="/faq">Preguntas Frecuentes</a></li>
                         </ul>
                     </div>
                     <div class="col-md-2 hidden-xs hidden-sm text-center iconos">

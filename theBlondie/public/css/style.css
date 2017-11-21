@@ -411,104 +411,6 @@ footer h3{
 
 /* NOTE: signUp Starts ---------------------------------------------------------------------*/
 
-.container-signupform {
-  background-image: url("../images/base_2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 50px;
-  width: 100%;
-
-}
-
-
-.form-control {
-     width: 90%;
-     height: 25px;
-     padding: 6px 6px;
-     /*background-image: url("../images/brooke-cagle-70750.jpg");*/
-}
-.signup-form{
-     width: 100%;
-     background-color:  rgba(0, 0, 0, 0);
-     justify-content: space-between;
-     margin: 10px;
-     transition: 1000ms;
-}
-
-.signup-form label{
-     margin: 0 0 0 10px;
-     font-size: 10px !important;
-     color: white;
-
-}
-
-.signup-form h1{
-     padding: 10px 10px 10px 10px;
-     /*font-size: 10px !important;*/
-
-}
-.signup-form p{
-     padding: 10px 10px 10px 10px;
-     color: white;
-     font-family: Sunshiney;
-     font-size: 1.5em;
-     border: solid 1px white;
-     margin-right: 6%;
-     border-radius: 0.5em;
-}
-
-.signup-form-input{
-     background-color: rgba(255, 0, 0, 0.1);
-     width: 90%;
-     margin: -3px 0 15px 10px;
-     font-family: Sunshiney;
-     font-size: 1.3em;
-     color: white;
-     transition: 300ms;
-     border-width: 1px;
-     height: 35px;
-
-}
-
-.signup-form input::placeholder{
-     color: rgba(255, 255, 255, 0.5);
-}
-
-.signup-form-input:hover {
-     background-color: rgba(255, 255, 255, 0.4);
-     width: 90%;
-     margin: -1px -4px 8px 6px;
-     font-family: Sunshiney;
-     font-size: 1.3em;
-     color: white;
-     border-color: rgba(255, 92, 195, 1);
-     border-width: 2px;
-     height: 40px;
-     box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.5);
-     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
-
-}
-
-.signup-form-input:focus {
-     background-color: rgba(255, 255, 255, 0.4);
-     width: 90%;
-     margin: -1px -4px 8px 6px;
-     font-family: Sunshiney;
-     font-size: 1.3em;
-     color: white;
-     border-color: rgba(255, 92, 195, 1);
-     border-width: 2px;
-     box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.5);
-     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
-     height: 40px;
-}
-
-
-.signup-form-boton {
-     margin: 25px 3px 10px 10px !important;
-     width: 42% !important;
-     font-size: 1.5em !important;
-}
 .bgcoloroption{
   background-color: #75003d!important;
 }
@@ -525,11 +427,11 @@ footer h3{
     cursor: pointer;
     border-radius: 10px;
     color: black;
+    margin-left: 37.333%;
+    float: none;
 }
-#avatar{
-    display: none;
-}
-    /* NOTE: signUp Ends*/
+
+/* NOTE: signUp Ends---------------------------------------------------------------------*/
 
 
 /* NOTE: probando animaciones start */

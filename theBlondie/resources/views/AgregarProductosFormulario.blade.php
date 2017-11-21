@@ -14,7 +14,7 @@
                             <div class="form-group">
                                 <label for="name" class="col-md-4 control-label">Nombre del Producto</label>
                                 <div class="col-md-6">
-                                    <input id="name" type="text" class="form-control" name="name" value=""  autofocus>
+                                    <input id="name" type="text" class="form-control" name="name" value="{{old('name')}}"  autofocus>
                                 </div>
                             </div>
 
@@ -22,7 +22,7 @@
                                 <label for="sku" class="col-md-4 control-label">SKU</label>
 
                                 <div class="col-md-6">
-                                    <input id="sku" type="text" class="form-control" name="sku" value=""  autofocus>
+                                    <input id="sku" type="text" class="form-control" name="sku" value="{{old('sku')}}"  autofocus>
                                 </div>
                             </div>
 
@@ -30,7 +30,7 @@
                                 <label for="color" class="col-md-4 control-label">Color</label>
 
                                 <div class="col-md-6">
-                                    <input id="color" type="text" class="form-control" name="color" value="" >
+                                    <input id="color" type="text" class="form-control" name="color" value="{{old('color')}}" >
                                 </div>
                             </div>
 
@@ -38,7 +38,7 @@
                                 <label for="stock" class="col-md-4 control-label">Stock</label>
 
                                 <div class="col-md-6">
-                                    <input id="stock" type="number" class="form-control" name="stock" >
+                                    <input id="stock" type="text" class="form-control" name="stock" value="{{old('stock')}}" >
                                 </div>
                             </div>
 
@@ -46,7 +46,24 @@
                                 <label for="precio" class="col-md-4 control-label">Precio</label>
 
                                 <div class="col-md-6">
-                                    <input id="precio" type="number" class="form-control" name="precio" >
+                                    <input id="precio" type="text" class="form-control" name="precio" value="{{old('precio')}}" >
+                                </div>
+                            </div>
+
+                            <div class="form-group custom-upload">
+                                <label for="imagen" class=" col-md-12 custom-upload-lable">Imagen</label>
+
+                                <div class=" ">
+                                    <input id="imagen" type="file"  name="imagen" value="{{old('imagen')}}" >
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description" class="col-md-4 control-label">Descripcion del Producto:</label>
+
+                                <div class="col-md-6">
+                                    <textarea  class="form-control" name="description" value="{{old('description')}}">{{old('description')}}
+                                    </textarea>
                                 </div>
                             </div>
 
