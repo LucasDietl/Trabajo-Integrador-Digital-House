@@ -9,7 +9,7 @@
 
                     <div class="panel-body">
                         @include('alerts.alerts')
-                        <form class="form-horizontal" method="POST" action="/Productos/Agregar">
+                        <form class="form-horizontal" method="POST" action="/Productos/Agregar" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="form-group">
                                 <label for="name" class="col-md-4 control-label">Nombre del Producto</label>
@@ -53,7 +53,7 @@
                             <div class="form-group custom-upload">
                                 <label for="imagen" class=" col-md-12 custom-upload-lable">Imagen</label>
 
-                                <div class=" ">
+                                <div class="hidden">
                                     <input id="imagen" type="file"  name="imagen" value="{{old('imagen')}}" >
                                 </div>
                             </div>

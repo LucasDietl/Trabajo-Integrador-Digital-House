@@ -16,6 +16,7 @@ Route::get('/', 'HomeController@start')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/zapatos', 'zapatosController@show')->name('zapatos');
 Route::get('/faq', 'faqController@show')->name('faq');
+Route::get('/Producto/{id}', 'ProductsController@show');
 
 Auth::routes();
 /* Rutas para los usuarios END*/
@@ -24,6 +25,9 @@ Auth::routes();
 /*Rutas para los administradores START*/
 Route::get('/Productos/Agregar', 'ProductsController@showForm')->middleware('auth');
 Route::post('/Productos/Agregar', 'ProductsController@create')->middleware('auth');
+
+Route::get('/Producto/{id}', 'ProductsController@show')->middleware('auth');
+
 
 Route::get('/Productos/Modificar', 'ProductsController@modify')->middleware('auth');
 Route::get('/Productos/Borrar', 'ProductsController@kill')->middleware('auth');

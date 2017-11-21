@@ -6,6 +6,18 @@
 @section('content')
     <div class="container slideimages">
         <div class="row muestra">
+            @foreach($zapatos as $zapato)
+            <div class="col-xs-12 col-sm-4 col-md-2 growup">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">{{$zapato->name}}</div>
+                    <div class="panel-body"><img src="/{{$zapato->image}}" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">{{$zapato->description}}</div>
+                </div>
+            </div>
+
+            @endforeach
+
+
             <div class="col-xs-12 col-sm-4 col-md-2 growup">
                 <div class="panel panel-danger">
                     <div class="panel-heading">Tempodara</div>
@@ -13,6 +25,7 @@
                     <div class="panel-footer">2x1 en la compra de cualquier par de zapatos</div>
                 </div>
             </div>
+
             <div class="col-xs-12 col-sm-4 col-md-2 growup ">
                 <div class="panel panel-danger">
                     <div class="panel-heading">Promo!!</div>
@@ -189,5 +202,6 @@
                 </div>
             </div>
         </div>
+        {{ $zapatos->links() }}
     </div><br><br>
 @endsection

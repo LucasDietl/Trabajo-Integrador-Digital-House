@@ -49,11 +49,11 @@ class ProductsController extends Controller
         $photoName = str_replace("public", "storage", $photoName);
 
         $producto = new Product();
-        $producto->name = $request["nombre"];
+        $producto->name = $request["name"];
         $producto->sku = $request["sku"];
         $producto->color = $request["color"];
         $producto->stock = $request["stock"];
-        $producto->price = $request["precio"];
+        $producto->precio = $request["precio"];
         $producto->description = $request["description"];
         $producto->image = $photoName;
 
@@ -63,8 +63,14 @@ class ProductsController extends Controller
         return redirect("/Productos/Agregar")->with("status", "Exito");
     }
 
+    public function show($id){
+        $product = Product::find($id);
+        return view('producto')->with('producto',$product);
+
+    }
 
     public function showForm(){
         return view('AgregarProductosFormulario');
     }
+
 }
