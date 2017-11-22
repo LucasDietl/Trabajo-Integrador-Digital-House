@@ -40,7 +40,7 @@
                                                     document.getElementById('logout-form').submit();">
                                         Logout
                                         </a></li>
-                                    <li class="inlineblock white">Bienvenido {{Auth::user()->name}}</li>
+                                    <a href="/Opciones"> <li class="inlineblock white">Bienvenido {{Auth::user()->name}} aqui estan sus opciones</li></a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}
                                     </form>

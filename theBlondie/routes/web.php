@@ -26,9 +26,12 @@ Auth::routes();
 Route::get('/Productos/Agregar', 'ProductsController@showForm')->middleware('auth');
 Route::post('/Productos/Agregar', 'ProductsController@create')->middleware('auth');
 
-Route::get('/Producto/{id}', 'ProductsController@show')->middleware('auth');
+Route::get('/Opciones', 'ProductsController@opciones')->middleware('auth');
 
+Route::get('/Productos/Modificar', 'ProductsController@showModifyId')->middleware('auth');
+Route::post('/Productos/Modificar', 'ProductsController@desvio')->middleware('auth');
 
-Route::get('/Productos/Modificar', 'ProductsController@modify')->middleware('auth');
+Route::get('/Productos/Modificar/{id}', 'ProductsController@showModify')->middleware('auth');
+Route::post('/Productos/Modificar/{id}', 'ProductsController@modify')->middleware('auth');
 Route::get('/Productos/Borrar', 'ProductsController@kill')->middleware('auth');
 /*Rutas para los administradores END*/
