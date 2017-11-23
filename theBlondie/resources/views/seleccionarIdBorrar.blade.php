@@ -4,12 +4,13 @@
 @endsection
 @section('content')
     <div class="container  slideimages">
-        <h1>Selecione el Id del Producto a Modificar</h1>
-        <form class="form-horizontal" method="POST" action="/Productos/Modificar" >
+        <h1>Selecione el Id del Producto a Eliminar</h1>
+        <p>Una vez eliminado el mismo no se podra rescatar</p>
+        <form class="form-horizontal" method="POST" action="/Productos/Borrar" >
             {{csrf_field()}}
             <div class="form-group">
                 <input id="id" name="id" type="text" value=" ">
-                <button type="submit" class="btn btn-primary" > Enviar </button>
+                <button type="submit" class="btn btn-primary" > Borrar </button>
             </div>
         </form>
 

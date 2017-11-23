@@ -33,5 +33,8 @@ Route::post('/Productos/Modificar', 'ProductsController@desvio')->middleware('au
 
 Route::get('/Productos/Modificar/{id}', 'ProductsController@showModify')->middleware('auth');
 Route::post('/Productos/Modificar/{id}', 'ProductsController@modify')->middleware('auth');
-Route::get('/Productos/Borrar', 'ProductsController@kill')->middleware('auth');
+
+Route::get('/Productos/Borrar', 'ProductsController@showKill')->middleware('auth');
+Route::post('/Productos/Borrar', 'ProductsController@kill')->middleware('auth');
+
 /*Rutas para los administradores END*/

@@ -11,4 +11,5 @@ class zapatosController extends Controller
         $zapatos = Product::paginate(6);
         return view('zapatos')->with('zapatos',$zapatos);
     }
+
 }

@@ -25,7 +25,7 @@ class ProductsController extends Controller
             'sku' =>'required|string|max:255|unique:products',
             'color' => 'required|string|max:255',
             'stock' => 'required|integer|min:0',
-            'precio' => 'required|integer|min:0',
+            'precio' => 'required|numeric|min:0',
             'imagen' => 'required',
             'description' => 'required|string|max:1000',
 
@@ -84,7 +84,7 @@ class ProductsController extends Controller
             'sku' =>'required|string|max:255',
             'color' => 'required|string|max:255',
             'stock' => 'required|integer|min:0',
-            'precio' => 'required|integer|min:0',
+            'precio' => 'required|numeric|min:0',
 
             'description' => 'required|string|max:1000',
 
@@ -136,5 +136,15 @@ class ProductsController extends Controller
     public function desvio(Request $request){
         $id = $request["id"];
        return redirect("/Productos/Modificar/$id");
+    }
+
+    public function showKill(){
+        return view('seleccionarIdBorrar');
+    }
+
+    public function kill(Request $request){
+        $product = Product::find($request["id"]);
+        $product->delete();
+        return view('opciones')->with("status", "Borraste el producto " . $product->name . " con éxito");;
     }
 }
