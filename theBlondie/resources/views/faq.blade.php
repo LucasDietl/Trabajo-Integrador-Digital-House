@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="fondobody2">
-    <div class="container margenfaq">
+    <div class="container">
         <header class="encabezadoFAQ">
             <h1>Preguntas Frecuentes</h1>
         </header>
