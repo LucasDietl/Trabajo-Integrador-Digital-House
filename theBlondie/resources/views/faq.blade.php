@@ -10,31 +10,31 @@
         <header class="encabezadoFAQ">
             <h1>Preguntas Frecuentes</h1>
         </header>
-        <div class="container">
+        <div class="container slideimages">
 
             <section class="FAQ-compras">
-                <h2>PREGUNTAS SOBRE LA COMPRA</h2>
-                <h3>¿COMO PUEDO COMPRAR EN LA WEB WWW.THEBLONDIESHOES.COM?</h3>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#toogle">Muéstrame</button>
+                <h2 class="white">PREGUNTAS SOBRE LA COMPRA</h2>
+                <h3 class="white">¿COMO PUEDO COMPRAR EN LA WEB WWW.THEBLONDIESHOES.COM?</h3>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#toogle">Muéstrame</button>
                 <div id="toogle" class="collapse">
-                    <ol>
+                    <ul>
                         <br>
-                        <li>Para seleccionar el artículo de tu interés en nuestra web, has de hacer click sobre el artículo que más te guste.</li><br>
+                        <li class="white">Para seleccionar el artículo de tu interés en nuestra web, has de hacer click sobre el artículo que más te guste.</li><br>
 
-                        <li>Serás redirigido a una página con la ficha del producto en concreto, con varias fotografías del producto y su ficha descriptiva. Para comprarlo, deberás seleccionar el color y la talla deseada y hacer click sobre el botón de “comprar”. El artículo se incluirá directamente en tu bolsa de la compra y podrás seguir seleccionando artículos a través del botón “continuar comprando” o pasar al siguiente paso haciendo click en “comprar”.</li><br>
+                        <li class="white">Serás redirigido a una página con la ficha del producto en concreto, con varias fotografías del producto y su ficha descriptiva. Para comprarlo, deberás seleccionar el color y la talla deseada y hacer click sobre el botón de “comprar”. El artículo se incluirá directamente en tu bolsa de la compra y podrás seguir seleccionando artículos a través del botón “continuar comprando” o pasar al siguiente paso haciendo click en “comprar”.</li><br>
 
-                        <li>En la siguiente pantalla, <b>deberás introducir tus datos de envío y la forma de pago: Puedes pagar con tarjeta de crédito o débito o a través de Paypal.</b><br>
+                        <li class="white">En la siguiente pantalla, <b>deberás introducir tus datos de envío y la forma de pago: Puedes pagar con tarjeta de crédito o débito o a través de Paypal.</b><br>
 
                             Aunque no es obligatorio, te recomendamos seleccionar la opción "abrir una cuenta para utilizar luego". De esta manera, podrás hacer el seguimiento de tu pedido en nuestra web y guardaremos los datos de tu pedido en tu panel de usuario.<br><br>
 
                             Recuerda que los datos de envío deben indicarse con toda exactitud para evitar confusiones o incidencias en el envío de los artículos adquiridos. Debes indicarnos la CALLE, NÚMERO, ESCALERA, PISO, PUERTA, CÓDIGO POSTAL Y NÚMERO DE TELÉFONO porque es la única vía para que tu pedido llegue correctamente a destino. Es posible que nuestro transportista te envíe un sms para informarte de la puesta en reparto del pedido, por lo que si no rellenas este campo, no podrás recibir este mensaje. www.theblondieshoes.com no se responsabiliza de las direcciones erroneas o mal colocadas.
                         </li>
-                    </ol>
+                    </ul>
                 </div>
-                <h3>¿COMO PUEDO PAGAR MI COMPRA?</h3>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#toogle2">Muéstrame</button>
+                <h3 class="white">¿COMO PUEDO PAGAR MI COMPRA?</h3>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#toogle2">Muéstrame</button>
                 <div id="toogle2" class="collapse">
-                    <p>
+                    <p  class="white">
                         <br>
                         Puedes pagar tu compra a través de tarjeta de crédito y débito de Visa, Visa Electron, MasterCard y Paypal . Si tu tarjeta es American Express, te recomendamos como medio de pago Paypal.<br><br>
 
@@ -46,11 +46,11 @@
                     </p>
                 </div>
 
-                <h2>POLÍTICAS DE ENVÍO</h2>
-                <h3>¿CUÁL ES EL COSTE DEL ENVÍO?</h3>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#toogle3">Muéstrame</button>
+                <h2 class="white">POLÍTICAS DE ENVÍO</h2>
+                <h3 class="white">¿CUÁL ES EL COSTE DEL ENVÍO?</h3>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#toogle3">Muéstrame</button>
                 <div id="toogle3" class="collapse">
-                    <p>
+                    <p  class="white">
                         <br>
                         El coste mínimo del envío en la web www.theblondieshoes.com es de $150 (IVA incluido).<br><br>
 
@@ -60,10 +60,10 @@
                     </p>
                 </div>
 
-                <h3>¿CUÁL ES EL PLAZO DE ENTREGA?</h3>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#toogle4">Muéstrame</button>
+                <h3 class="white">¿CUÁL ES EL PLAZO DE ENTREGA?</h3>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#toogle4">Muéstrame</button>
                 <div id="toogle4" class="collapse">
-                    <p>
+                    <p  class="white">
                         <br>
                         Para los productos que se encuentran en stock, el plazo de entrega es de <b>entre 24 y 48 horas laborables desde que el paquete sale de nuestro almacén central</b>.<br><br>
 
@@ -75,10 +75,10 @@
                     </p>
                 </div>
 
-                <h3>¿CÓMO PUEDO SABER SI MI PAQUETE HA SIDO YA ENVIADO?</h3>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#toogle5">Muéstrame</button>
+                <h3 class="white">¿CÓMO PUEDO SABER SI MI PAQUETE HA SIDO YA ENVIADO?</h3>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#toogle5">Muéstrame</button>
                 <div id="toogle5" class="collapse">
-                    <p>
+                    <p  class="white">
                         <br>
                         Si realizaste la compra habiéndote registrado previamente en nuestra web, podrás realizar el seguimiento de tu pedido desde tu panel de usuario.<br><br>
 
@@ -90,10 +90,10 @@
                     </p>
                 </div>
 
-                <h3>¿QUÉ SUCEDE EN CASO DE QUE EN EL MOMENTO DE LA ENTREGA NO ME ENCUENTRE EN MI DOMICILIO?</h3>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#toogle6">Muéstrame</button>
+                <h3 class="white">¿QUÉ SUCEDE EN CASO DE QUE EN EL MOMENTO DE LA ENTREGA NO ME ENCUENTRE EN MI DOMICILIO?</h3>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#toogle6">Muéstrame</button>
                 <div id="toogle6" class="collapse">
-                    <p>
+                    <p  class="white">
                         <br>
                         Dispones de un plazo máximo de diez (10) días, antes de que el paquete vuelva a ser enviado a origen.<br><br>
 
@@ -101,20 +101,20 @@
                     </p>
                 </div>
 
-                <h2>PREGUNTAS SOBRE NUESTROS PRODUCTOS Y SUS TALLAS</h2>
-                <h3>¿QUÉ TALLAS SE MUESTRAN EN LA WEB?</h3>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#toogle7">Muéstrame</button>
+                <h2 class="white">PREGUNTAS SOBRE NUESTROS PRODUCTOS Y SUS TALLAS</h2>
+                <h3 class="white">¿QUÉ TALLAS SE MUESTRAN EN LA WEB?</h3>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#toogle7">Muéstrame</button>
                 <div id="toogle7" class="collapse">
-                    <p>
+                    <p  class="white">
                         <br>
                         Todas las tallas mostradas en la web son continentales europeas.
                     </p>
                 </div>
 
-                <h3>¿EL COLOR DE LAS FOTOGRAFÍAS ES EXACTO AL DE LOS PRODUCTOS REALES?</h3>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#toogle8">Muéstrame</button>
+                <h3 class="white">¿EL COLOR DE LAS FOTOGRAFÍAS ES EXACTO AL DE LOS PRODUCTOS REALES?</h3>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#toogle8">Muéstrame</button>
                 <div id="toogle8" class="collapse">
-                    <p>
+                    <p  class="white">
                         <br>
                         www.theblondieshoes.com ha realizado un esfuerzo para mostrar los colores de los productos de la forma más cercana posible a la realidad.<br><br>
 

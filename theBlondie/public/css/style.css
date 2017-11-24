@@ -395,7 +395,9 @@ footer h3{
   margin-bottom: 12px;
   /*background: linear-gradient(to right,#ef32d9,#89fffd)!important;*/
 }
-
+.FAQ-compras{
+    padding-bottom: 9%;
+}
 .FAQ-compras h2 {
     font-size: 14px;
     margin-bottom: 0;
@@ -405,7 +407,7 @@ footer h3{
     color: #7f7f7f;
 }
 .fondobody2{
-  background-image: url("../images/base_2.jpg");
+  background-image: url("../images/bgfaq.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -467,6 +469,28 @@ ul{
 }
 /*NOTE Vista SeleccionarID END----------------------------------------*/
 
+/*NOTE Vista Zapatos START----------------------------------------*/
+.zapatosmargen{
+    padding-top:50px;
+}
+.gold{
+    color: goldenrod;
+}
+.panel-heading{
+   background-color:  lavenderblush;
+}
+.panel-heading, .panel-footer{
+    border:1px solid black;
+    background-color:  lavenderblush;
+    color:black;
+}
+.panel-body{
+    border-left:1px solid black;
+    border-right:1px solid black;
+}
+
+
+/*NOTE Vista Zapatos END----------------------------------------*/
 @media screen and (max-width: 768px) { /* NOTE: basicamente este media query es para pantallas pequeñas */
   /* NOTE: Home start */
   .growup:hover{
