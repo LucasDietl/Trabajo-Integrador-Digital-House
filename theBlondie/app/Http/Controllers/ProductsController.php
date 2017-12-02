@@ -6,6 +6,7 @@ use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Validator;
+use Alert;
 
 class ProductsController extends Controller
 {
@@ -121,8 +122,9 @@ class ProductsController extends Controller
 
         $producto->save();
         $id = $request["id"];
-
+        Alert::success('Se modificó el producto con exito','Status')->autoclose(2000);
         return redirect("/Productos/Modificar/$id");
+
     }
 
     public function opciones(){
@@ -135,7 +137,14 @@ class ProductsController extends Controller
 
     public function desvio(Request $request){
         $id = $request["id"];
-       return redirect("/Productos/Modificar/$id");
+        $product = Product::find($id);
+        if($product == null){
+            Alert::error('El numero de ID ingresado no existe','Status')->persistent();
+            return redirect('/Productos/Modificar');
+        }else{
+            return redirect("/Productos/Modificar/$id");
+        }
+
     }
 
     public function showKill(){
@@ -144,7 +153,13 @@ class ProductsController extends Controller
 
     public function kill(Request $request){
         $product = Product::find($request["id"]);
-        $product->delete();
-        return view('opciones')->with("status", "Borraste el producto " . $product->name . " con éxito");;
+        if($product != null){
+            $product->delete();
+            return view('opciones')->with("status", "Borraste el producto " . $product->name . " con éxito");;
+        }else{
+            Alert::error('El numero de ID ingresado no existe','Status')->persistent();
+            return view('seleccionarIdBorrar');
+        }
+
     }
 }

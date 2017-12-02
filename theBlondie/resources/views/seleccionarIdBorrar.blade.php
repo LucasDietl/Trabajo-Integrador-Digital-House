@@ -3,7 +3,7 @@
     <title>The Blondie - Shoes</title>
 @endsection
 @section('content')
-    <div class="container  slideimages">
+    <div class="container  slideimages altominimo">
         <div class="centrado">
             <h1>Selecione el Id del Producto a Eliminar</h1>
             <p>Una vez eliminado el mismo no se podra rescatar</p>

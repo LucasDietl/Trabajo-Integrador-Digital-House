@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" href="{{asset('images/favicon.png')}}">
     <meta name="viewport"content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney|Yesteryear|Raleway|Roboto" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     @yield('title')
 </head>
@@ -147,5 +147,8 @@
         </div>
     </footer>
     @yield('footer')
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7/dist/sweetalert2.all.min.js"></script>
+    @include('sweet::alert')
 </body>
 </html>

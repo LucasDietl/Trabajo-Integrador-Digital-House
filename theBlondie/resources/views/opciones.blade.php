@@ -3,7 +3,7 @@
     <title>Opcion Landia</title>
 @endsection
 @section('content')
-    <div class="container  slideimages">
+    <div class="container  slideimages altominimo">
         <div class="centrado">
             <h1>Estas son la Opciones que posee el administrador:</h1>
                 @if (session("status"))

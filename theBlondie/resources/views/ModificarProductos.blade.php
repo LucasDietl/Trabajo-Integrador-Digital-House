@@ -3,7 +3,7 @@
     <title>The Blondie - Shoes</title>
 @endsection
 @section('content')
-    <div class="container  slideimages">
+    <div class="container  slideimages altominimo">
         <div class="row padding_SignInAndUp">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">

@@ -3,7 +3,7 @@
     <title>{{$producto->name}} </title>
 @endsection
 @section('content')
-    <div class="container  slideimages">
+    <div class="container  slideimages altominimo">
         <div class="row">
             <h1 class="">{{$producto->name}}</h1>
             <div class="col-md-7">

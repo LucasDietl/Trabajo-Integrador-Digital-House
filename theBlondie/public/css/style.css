@@ -229,7 +229,7 @@ text-align: center;
 
 /* NOTE: sign in start ------------------------------------------------------------------ */
 .altominimo{
-  min-height: 800px;
+  min-height: 633px;
 }
 
 
@@ -484,7 +484,7 @@ ul{
     background-color:  lavenderblush;
     color:black;
 }
-.panel-body{
+.panel-bodyZapatos{
     border-left:1px solid black;
     border-right:1px solid black;
 }
