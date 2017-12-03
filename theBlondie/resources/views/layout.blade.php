@@ -9,8 +9,27 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     @yield('title')
+    <script>
+        window.addEventListener("load",function(){
+           var load_screen = document.getElementById("load_screen");
+           document.body.removeChild(load_screen);
+        });
+    </script>
 </head>
 <body>
+<div id="load_screen" >
+    <div id="loading">
+        <div class="white position">
+            THE<br> BLONDIE
+        </div>
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+</div>
     @yield('navbar')
     <nav id="navbarEntero" class="navbar navbar-default navbar-fixed-top navbarcolor">
         <div class="">
@@ -35,12 +54,14 @@
                         <div class="col-sm-4">
                             @if(Auth::check())
                                 <ul class="inline">
-                                    <li class="inlineblock" ><a href="{{ route('logout') }}"
+                                    <li class="inlineblock" >
+                                        <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();">
                                         Logout
-                                        </a></li>
-                                    <a href="/Opciones"> <li class="inlineblock white">Bienvenido {{Auth::user()->name}} aqui estan sus opciones</li></a>
+                                        </a>
+                                    </li>
+                                    <a href="/Opciones"> <li class="inlineblock white">Bienvenido {{Auth::user()->name}}</li></a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}
                                     </form>
@@ -52,7 +73,12 @@
                             </ul>
                                 @endif
                         </div>
-                        <div class="col-sm-4 hidden-xs">
+                        @if(Auth::check())
+                            <div class="col-sm-4 hidden-xs paddingtop">
+                            <a href="/Opciones"> <li class="inlineblock white">  Opcioes para Administradores </li></a>
+                        </div>
+                        @endif
+                        <!--<div class="col-sm-4 hidden-xs">
                             <div class="">
                                 <form class="navbar-form" role="search" method="get" action="{{ route('zapatos') }}">
                                     <div class="inner-addon left-addon">
@@ -72,7 +98,7 @@
                                 <span class="white ">0$</span>
 
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="row vertical align">
@@ -92,13 +118,13 @@
                     </div>
                     <div class="col-md-2 hidden-xs hidden-sm text-center iconos">
                         <div>
-                            <a href="https://www.facebook.com/theblondieok/"><i class="fa fa-facebook-square fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/theblondieok/" target="_blank"><i class="fa fa-facebook-square fa-facebook"></i></a>
                         </div>
                         <div>
-                            <a href="https://www.instagram.com/theblondieok/?hl=es"><i class="fa fa-instagram fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/theblondieok/?hl=es" target="_blank"><i class="fa fa-instagram fa-instagram"></i></a>
                         </div>
                         <div>
-                            <a href="https://twitter.com/theblondieok"><i class="fa fa-twitter fa-twitter"></i></a>
+                            <a href="https://twitter.com/theblondieok" target="_blank"><i class="fa fa-twitter fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
