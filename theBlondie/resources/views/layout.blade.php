@@ -12,7 +12,7 @@
 </head>
 <body>
     @yield('navbar')
-    <nav class="navbar navbar-default navbar-fixed-top navbarcolor">
+    <nav id="navbarEntero" class="navbar navbar-default navbar-fixed-top navbarcolor">
         <div class="">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -106,6 +106,57 @@
         </div>
     </nav>
 
+    <nav id="navbarPeque" class="navbar navbar-default navbar-fixed-top navbarcolor">
+        <div class="container fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed hamburgesa" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logoname visible-xs" href="{{ route('home') }}">THE<br>BLONDIE</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse border" id="navbar1">
+                <div class="text-center">
+                    <a class="hidden-xs" style=" color:grey;" href="{{ route('home') }}">#Neverpony</a>
+                </div>
+                <div class="container-fluid">
+                </div>
+                <div class="row vertical align">
+
+                    <div class="col-md-2 col-sm-3">
+                        <a class="navbar-brand logoname hidden-xs" href="{{ route('home') }}">THE<br>BLONDIE</a>
+                    </div>
+                    <div class="col-md-8 col-sm-9 center-block">
+
+
+                        <ul class="nav navbar-nav inline">
+                            <li class="active inlineblock"> <span class="sr-only">(current)</span></li>
+                            <li class="inlineblock"><a href="{{ route('home') }}">Home</a></li>
+                            <li class="inlineblock"><a href="/zapatos">Zapatos</a></li>
+                            <li class="inlineblock"><a href="/faq">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 hidden-xs hidden-sm text-center iconos">
+                        <div>
+                            <a href="https://www.facebook.com/theblondieok/"><i class="fa fa-facebook-square fa-facebook"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/theblondieok/?hl=es"><i class="fa fa-instagram fa-instagram"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/theblondieok"><i class="fa fa-twitter fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     @yield('content')
@@ -149,6 +200,7 @@
     @yield('footer')
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7/dist/sweetalert2.all.min.js"></script>
+    <script src="{{asset('js/main.js')}}"></script>
     @include('sweet::alert')
 </body>
 </html>

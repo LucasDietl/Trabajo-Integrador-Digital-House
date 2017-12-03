@@ -31,6 +31,8 @@ nav div ul li a{
 .padding_SignInAndUp{
   padding: 70px 0;
 }
+
+
 .btnbuscar {
   background: #eb28e4;
   background-image: -webkit-linear-gradient(top, #eb28e4, #2980b9);
@@ -503,7 +505,7 @@ ul{
 
   /* NOTE: sign in start */
   .altominimo{
-    min-height: auto;
+    min-height: 500px;
   }
 
 .slideimages{
