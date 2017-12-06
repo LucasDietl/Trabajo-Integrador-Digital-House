@@ -60,7 +60,7 @@ class ProductsController extends Controller
 
         $producto->save();
 
-
+        Alert::success('Producto creado con exito','Status')->autoclose(2500);
         return redirect("/Productos/Agregar")->with("status", "Exito");
     }
 
@@ -122,7 +122,7 @@ class ProductsController extends Controller
 
         $producto->save();
         $id = $request["id"];
-        Alert::success('Se modificó el producto con exito','Status')->autoclose(2000);
+        Alert::success('Se modificó el producto con exito','Status')->autoclose(2500);
         return redirect("/Productos/Modificar/$id");
 
     }

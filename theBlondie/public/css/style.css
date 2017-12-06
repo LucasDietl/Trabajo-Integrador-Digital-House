@@ -273,6 +273,7 @@ width: 30px;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     z-index: 0;
+    min-height: 361px;
   }
 
   .growup:hover {

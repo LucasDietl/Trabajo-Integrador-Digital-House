@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a65ccf8-a39c-46a0-af8e-c9dd91278c9a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/theBlondie/.idea/workspace.xml" afterPath="$PROJECT_DIR$/theBlondie/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/theBlondie/public/js/main.js" afterPath="$PROJECT_DIR$/theBlondie/public/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/theBlondie/app/Http/Controllers/ProductsController.php" afterPath="$PROJECT_DIR$/theBlondie/app/Http/Controllers/ProductsController.php" />
+      <change beforePath="$PROJECT_DIR$/theBlondie/app/Http/Controllers/zapatosController.php" afterPath="$PROJECT_DIR$/theBlondie/app/Http/Controllers/zapatosController.php" />
+      <change beforePath="$PROJECT_DIR$/theBlondie/public/css/style.css" afterPath="$PROJECT_DIR$/theBlondie/public/css/style.css" />
       <change beforePath="$PROJECT_DIR$/theBlondie/resources/views/layout.blade.php" afterPath="$PROJECT_DIR$/theBlondie/resources/views/layout.blade.php" />
       <change beforePath="$PROJECT_DIR$/theBlondie/resources/views/zapatos.blade.php" afterPath="$PROJECT_DIR$/theBlondie/resources/views/zapatos.blade.php" />
     </list>
@@ -15,74 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="signup.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/signup.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signin.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/signin.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1510787442503" expanded="true" signature="9:17" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="33:40" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="142:150" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="235:244" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="454:471" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="512:526" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="693:736" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="1017:1038" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="1148:1173" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="1344:1390" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="1661:1685" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="1791:1819" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="2218:2252" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="2777:2804" ph="..." />
-                <marker date="1510787442503" expanded="true" signature="3152:3160" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theBlondie/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zapatos.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/zapatos.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-              <folding>
-                <marker date="1512579867238" expanded="true" signature="9:17" ph="..." />
-                <marker date="1512579867238" expanded="true" signature="29:36" ph="..." />
-                <marker date="1512579867238" expanded="true" signature="98:107" ph="..." />
-                <marker date="1512579867238" expanded="true" signature="438:457" ph="..." />
-                <marker date="1512579867238" expanded="true" signature="605:618" ph="..." />
-                <marker date="1512579867238" expanded="true" signature="693:704" ph="..." />
-                <marker date="1512579867238" expanded="true" signature="814:828" ph="..." />
-                <marker date="1512579867238" expanded="true" signature="1024:1044" ph="..." />
-                <marker date="1512579867238" expanded="true" signature="9557:9576" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>grow</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,6 +29,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/theBlondie/resources/views/layout.blade.php" />
+        <option value="$PROJECT_DIR$/theBlondie/app/Http/Controllers/ProductsController.php" />
+        <option value="$PROJECT_DIR$/theBlondie/app/Http/Controllers/zapatosController.php" />
+        <option value="$PROJECT_DIR$/theBlondie/public/css/style.css" />
         <option value="$PROJECT_DIR$/theBlondie/resources/views/zapatos.blade.php" />
       </list>
     </option>
@@ -144,6 +87,41 @@
               <item name="Trabajo-Integrador-Digital-House" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="theBlondie" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Trabajo-Integrador-Digital-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Trabajo-Integrador-Digital-House" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theBlondie" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Trabajo-Integrador-Digital-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Trabajo-Integrador-Digital-House" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theBlondie" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Trabajo-Integrador-Digital-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Trabajo-Integrador-Digital-House" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theBlondie" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Trabajo-Integrador-Digital-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Trabajo-Integrador-Digital-House" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theBlondie" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Trabajo-Integrador-Digital-House" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Trabajo-Integrador-Digital-House" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theBlondie" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Trabajo-Integrador-Digital-House" type="b2602c69:ProjectViewProjectNode" />
@@ -208,18 +186,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512577757042</updated>
-      <workItem from="1512577759558" duration="1559000" />
+      <workItem from="1512577759558" duration="3599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1559000" />
+    <option name="totallyTimeSpent" value="3599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -251,57 +228,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/signup.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/signin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510787442503" expanded="true" signature="9:17" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="33:40" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="142:150" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="235:244" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="454:471" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="512:526" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="693:736" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="1017:1038" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="1148:1173" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="1344:1390" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="1661:1685" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="1791:1819" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="2218:2252" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="2777:2804" ph="..." />
-            <marker date="1510787442503" expanded="true" signature="3152:3160" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theBlondie/app/Http/Controllers/zapatosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theBlondie/app/Http/Controllers/Pruebas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theBlondie/app/Http/Controllers/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-768">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -345,6 +274,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/theBlondie/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1512580897484" expanded="true" signature="176:203" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="455:475" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="531:553" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="569:576" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="1239:1247" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="1939:1954" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="2181:2196" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="2402:2415" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="2582:2599" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="3012:3030" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="3111:3128" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="3212:3226" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="3446:3462" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="3550:3569" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="3723:3736" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="4191:4209" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="5465:5480" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="5823:5838" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="7591:7606" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="7833:7848" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="8136:8151" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="8494:8509" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="9522:9531" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="9830:9845" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="9904:9919" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="9983:9998" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="11051:11059" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="11557:11576" ph="..." />
+            <marker date="1512580897484" expanded="true" signature="11603:11617" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theBlondie/app/Http/Controllers/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="124" column="82" lean-forward="false" selection-start-line="124" selection-start-column="82" selection-end-line="124" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theBlondie/app/Http/Controllers/zapatosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/zapatos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding>
+            <marker date="1512582700054" expanded="true" signature="9:17" ph="..." />
+            <marker date="1512582700054" expanded="true" signature="29:36" ph="..." />
+            <marker date="1512582700054" expanded="true" signature="98:107" ph="..." />
+            <marker date="1512582700054" expanded="true" signature="438:457" ph="..." />
+            <marker date="1512582700054" expanded="true" signature="606:619" ph="..." />
+            <marker date="1512582700054" expanded="true" signature="694:705" ph="..." />
+            <marker date="1512582700054" expanded="true" signature="815:829" ph="..." />
+            <marker date="1512582700054" expanded="true" signature="1025:1045" ph="..." />
+            <marker date="1512582700054" expanded="true" signature="1167:1186" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theBlondie/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="275" column="22" lean-forward="true" selection-start-line="275" selection-start-column="22" selection-end-line="275" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/theBlondie/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -353,20 +370,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/zapatos.blade.php">
+    <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/signin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512579867238" expanded="true" signature="9:17" ph="..." />
-            <marker date="1512579867238" expanded="true" signature="29:36" ph="..." />
-            <marker date="1512579867238" expanded="true" signature="98:107" ph="..." />
-            <marker date="1512579867238" expanded="true" signature="438:457" ph="..." />
-            <marker date="1512579867238" expanded="true" signature="605:618" ph="..." />
-            <marker date="1512579867238" expanded="true" signature="693:704" ph="..." />
-            <marker date="1512579867238" expanded="true" signature="814:828" ph="..." />
-            <marker date="1512579867238" expanded="true" signature="1024:1044" ph="..." />
-            <marker date="1512579867238" expanded="true" signature="9557:9576" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="9:17" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="33:40" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="142:150" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="235:244" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="454:471" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="512:526" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="693:736" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="1017:1038" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="1148:1173" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="1344:1390" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="1661:1685" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="1791:1819" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="2218:2252" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="2777:2804" ph="..." />
+            <marker date="1510787442503" expanded="true" signature="3152:3160" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/signup.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510682498596" expanded="true" signature="9:22" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="34:43" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="386:405" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="440:454" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="510:552" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="814:827" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="893:913" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="1031:1055" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="1281:1324" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="1600:1614" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="1670:1691" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="1809:1834" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="2060:2106" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="2431:2455" ph="..." />
+            <marker date="1510682498596" expanded="true" signature="2573:2601" ph="..." />
           </folding>
         </state>
       </provider>

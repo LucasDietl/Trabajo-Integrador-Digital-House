@@ -13,7 +13,7 @@
         window.addEventListener("load",function(){
 
            var load_screen = document.getElementById("load_screen");
-           setTimeout(function(){document.body.removeChild(load_screen);},1500)
+           setTimeout(function(){document.body.removeChild(load_screen);},1000)
 
         });
     </script>

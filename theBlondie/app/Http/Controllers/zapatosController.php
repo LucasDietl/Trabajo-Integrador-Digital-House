@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class zapatosController extends Controller
 {
     public function show(){
-        $zapatos = Product::paginate(6);
+        $zapatos = Product::paginate(12);
         return view('zapatos')->with('zapatos',$zapatos);
     }
 
