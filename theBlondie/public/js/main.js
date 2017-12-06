@@ -5,7 +5,7 @@ function navbar() {
         document.querySelector("#navbarEntero").style="display:none;";
         document.querySelector("#navbarPeque").style="display:block;";
     }else{
-        document.querySelector("#navbarEntero").style="display: block;"
+        document.querySelector("#navbarEntero").style="display: block;";
         document.querySelector("#navbarPeque").style="display:none;";
     }
 }
