@@ -3,20 +3,107 @@
     <title>{{$producto->name}} </title>
 @endsection
 @section('content')
-    <div class="container  slideimages altominimo">
-        <div class="row">
-            <h1 class="">{{$producto->name}}</h1>
-            <div class="col-md-7">
-                <img style="width: 100%; max-height: 2%; " src="/{{$producto->image}}">
-            </div>
-            <div class="col-md-5">
-                <ul>
-                    <li>{{$producto->precio}}</li>
-                    <li>{{$producto->color}}</li>
-                    <li>{{$producto->stock}}</li>
-                    <li>{{$producto->description}}</li>
-                </ul>
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.css" />-->
+    <link rel="stylesheet" type="text/css" href="{{asset('css/detalledeproducto.css')}}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
+
+    <div class="prod_page slideimages">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="product_item_view">
+                            <img src="/{{$producto->image}}" class="img-responsive"/>
+                        </div>
+                    </div>
+                    <!--Product Detail-->
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="product_detail_view">
+                            <div class="pro_heading">
+                                Modelo {{$producto->name}}
+
+                                <span class="new_coll">
+	                             New Collection
+	                             <span id="stock_available">
+	                                 Instock, {{$producto->stock}} disponibles
+	                             </span>
+	                         </span>
+
+                            </div>
+
+                            <div class="pro_rate">
+                                $ {{$producto->precio}}
+                            </div>
+
+                            <div class="color_quantity">
+                                <div class="color">
+                                    <span>Color: </span>
+                                    <span>{{$producto->color}}</span>
+                                </div>
+
+                                <div class="slash">
+                                    /
+                                </div>
+                                <!--<div class="quantity">
+                                    <form>
+                                        <div class="from-group">
+                                            <input type="text" width="70"/>
+
+                                        </div>
+                                    </form>
+                                </div>-->
+                            </div>
+
+                            <!---->
+
+                            <div class="col-md-12">
+
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs tabs-3 red" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Descripción</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Promociones</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Poductos Relacionados</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panels -->
+                                <div class="tab-content card">
+                                    <!--Panel 1-->
+                                    <div class="tab-pane fade in active" id="panel1" role="tabpanel">
+                                        <br>
+                                        <p>{{$producto->description}}</p>
+                                        <br>
+                                    </div>
+                                    <!--/.Panel 1-->
+                                    <!--Panel 2-->
+                                    <div class="tab-pane fade" id="panel2" role="tabpanel">
+                                        <br>
+                                        <p>Aquí irían las promociones y formas de pago</p>
+                                        <br>
+                                    </div>
+                                    <!--/.Panel 2-->
+                                    <!--Panel 3-->
+                                    <div class="tab-pane fade" id="panel3" role="tabpanel">
+                                        <br>
+                                        <p>Aquí debería ir cualquier otra cosa que aún no se nos ocurrio!!! \_O_/</p>
+                                        <br>
+                                    </div>
+                                    <!--/.Panel 3-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 @endsection

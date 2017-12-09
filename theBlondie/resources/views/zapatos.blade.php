@@ -2,32 +2,87 @@
 
 @section('title')
     <title>The Blondie - Shoes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 @endsection
 @section('content')
-    <div class="container slideimages">
+    <div class=" slideimages">
         <header class="zapatosmargen">
-            <h1 class="gold" >Nuestros Zapatos especialemtne diseñados para vos! </h1>
-            <p class="gold">Elegi el que mas te guste entre nuestra amplia collecion</p>
+            <section>
+                <h1 class="gold" >Nuestros Zapatos especialemtne diseñados para vos! </h1>
+                <p class="gold">Elegi el que mas te guste entre nuestra amplia collecion</p>
+            </section>
         </header>
-        <div class="row muestra ">
-            @foreach($zapatos as $zapato)
-            <div class="col-xs-12 col-sm-4 col-md-2 growup ">
-                <div class="panel">
-                    <div class="panel-heading">{{$zapato->name}}</div>
-                        <a href="http://127.0.0.1:8000/Producto/{{$zapato->id}}">
-                            <div class="panel-bodyZapatos">
-                                <img src="/{{$zapato->image}}" class="img-responsive" style="width:100%" alt="Image">
+        <div class="">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item carusel active">
+                        <img src="{{$zapato1->image}}" alt="Los Angeles" style="width:100%;">
+                            <div class="carousel-caption">
+                                <h3>The Blondie - Shoes</h3>
+                                <p>Thank you!</p>
                             </div>
-                        </a>
-                    <div class="panel-footer">
-                        {{$zapato->description}}
+                    </div>
+
+                    <div class="item carusel">
+                        <img src="{{asset('images/summer18.jpg')}}" alt="Chicago" style="width:100%;">
+                            <div class="carousel-caption">
+                                <h3>The Blondie - Shoes</h3>
+                                <p>LOV3</p>
+                            </div>
+                    </div>
+
+                    <div class="item carusel">
+                        <img src="{{asset('images/cactuswide.jpg')}}" alt="New york" style="width:100%;">
+                            <div class="carousel-caption">
+                                <h3>The Blondie - Shoes</h3>
+                                <p>Good Times!!</p>
+                            </div>
                     </div>
                 </div>
 
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
             </div>
-            @endforeach
         </div>
-        {{ $zapatos->links() }}
+
+        <div class="container">
+            <div class="row muestra">
+                @foreach($zapatos as $zapato)
+                <div class="col-xs-12 col-sm-4 col-md-2 growup ">
+                    <div class="panel">
+                        <div class="panel-heading">{{$zapato->name}}</div>
+                            <a href="http://127.0.0.1:8000/Producto/{{$zapato->id}}">
+                                <div class="panel-bodyZapatos">
+                                    <img src="/{{$zapato->image}}" class="img-responsive" style="width:100%" alt="Image">
+                                </div>
+                            </a>
+                        <div class="panel-footer">
+                            {{$zapato->description}}
+                        </div>
+                    </div>
+
+                </div>
+                @endforeach
+            </div>
+
+            {{ $zapatos->links() }}
+        </div>
     </div><br>
     <br><br>
 @endsection

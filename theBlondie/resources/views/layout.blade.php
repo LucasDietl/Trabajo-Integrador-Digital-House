@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <!-- NOTE: incluye el icono en la pestaña del navegador (Favicon)-->
+    @yield('title')
     <link rel="icon" type="image/png" href="{{asset('images/favicon.png')}}">
     <meta name="viewport"content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney|Yesteryear|Raleway|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-    @yield('title')
+
     <script>
         window.addEventListener("load",function(){
 
@@ -19,19 +20,21 @@
     </script>
 </head>
 <body>
-<div id="load_screen" >
-    <div id="loading">
-        <div class="white position">
-            THE<br> BLONDIE
-        </div>
-        <div class="sk-folding-cube">
-            <div class="sk-cube1 sk-cube"></div>
-            <div class="sk-cube2 sk-cube"></div>
-            <div class="sk-cube4 sk-cube"></div>
-            <div class="sk-cube3 sk-cube"></div>
+
+    <div id="load_screen" >
+        <div id="loading">
+            <div class="white position">
+                THE<br> BLONDIE
+            </div>
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
         </div>
     </div>
-</div>
+
     @yield('navbar')
     <nav id="navbarEntero" class="navbar navbar-default navbar-fixed-top navbarcolor">
         <div class="">
@@ -152,8 +155,10 @@
                 <div class="text-center">
                     <a class="hidden-xs" style=" color:grey;" href="{{ route('home') }}">#Neverpony</a>
                 </div>
+
                 <div class="container-fluid">
                 </div>
+
                 <div class="row vertical align">
 
                     <div class="col-md-2 col-sm-3">
@@ -171,13 +176,13 @@
                     </div>
                     <div class="col-md-2 hidden-xs hidden-sm text-center iconos">
                         <div>
-                            <a href="https://www.facebook.com/theblondieok/"><i class="fa fa-facebook-square fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/theblondieok/" target="_blank"><i class="fa fa-facebook-square fa-facebook"></i></a>
                         </div>
                         <div>
-                            <a href="https://www.instagram.com/theblondieok/?hl=es"><i class="fa fa-instagram fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/theblondieok/?hl=es" target="_blank"><i class="fa fa-instagram fa-instagram"></i></a>
                         </div>
                         <div>
-                            <a href="https://twitter.com/theblondieok"><i class="fa fa-twitter fa-twitter"></i></a>
+                            <a href="https://twitter.com/theblondieok" target="_blank"><i class="fa fa-twitter fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>

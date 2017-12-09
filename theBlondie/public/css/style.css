@@ -590,6 +590,10 @@ btn-more:hover {
     -webkit-transform:  rotate(0deg) ;
   }
 }
+
+
+
+
 /* NOTE: probando animaciones end */
 
 
@@ -623,6 +627,9 @@ ul{
     border-left:1px solid black;
     border-right:1px solid black;
 }
+.carusel{
+    max-height: 450px!important;
+}
 
 
 /*NOTE Vista Zapatos END----------------------------------------*/
@@ -632,6 +639,9 @@ ul{
     -webkit-transform:  scaleX(1) scaleY(1)  ;
     transform:  scaleX(1) scaleY(1)  ;
       }
+    .carusel{
+        max-height: 200px!important;
+    }
 
 
   /* NOTE: Home End */
