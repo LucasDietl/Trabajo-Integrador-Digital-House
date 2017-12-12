@@ -80,8 +80,9 @@
                 </div>
                 @endforeach
             </div>
-
-            {{ $zapatos->links() }}
+                <div class="container containerpaginator">
+                    {{ $zapatos->links('vendor.pagination.bootstrap-4') }}
+                </div>
         </div>
     </div><br>
     <br><br>
