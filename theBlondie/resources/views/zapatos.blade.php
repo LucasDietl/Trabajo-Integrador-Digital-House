@@ -7,13 +7,13 @@
 @endsection
 @section('content')
     <div class=" slideimages">
-        <header class="zapatosmargen">
+        <!--<header class="zapatosmargen">
             <section>
                 <h1 class="gold" >Nuestros Zapatos especialemtne diseñados para vos! </h1>
                 <p class="gold">Elegi el que mas te guste entre nuestra amplia collecion</p>
             </section>
-        </header>
-        <div class="">
+        </header> -->
+        <div class="carusel">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -64,15 +64,18 @@
         <div class="container">
             <div class="row muestra">
                 @foreach($zapatos as $zapato)
-                <div class="col-xs-12 col-sm-4 col-md-2 growup ">
-                    <div class="panel">
-                        <div class="panel-heading">{{$zapato->name}}</div>
+                <div class="col-xs-12 col-sm-4 col-md-4 growup ">
+                    <div class="panel format">
+                        <div class="">
+                            <div class="nombre">{{$zapato->name}}</div>
+                            <div class="precio">${{$zapato->precio}}</div>
+                        </div>
                             <a href="http://127.0.0.1:8000/Producto/{{$zapato->id}}">
                                 <div class="panel-bodyZapatos">
-                                    <img src="/{{$zapato->image}}" class="img-responsive" style="width:100%" alt="Image">
+                                    <span class="opacity" style="background-color: black"><img src="/{{$zapato->image}}" class="img-responsive" style="width:100%" alt="Imagen"></span>
                                 </div>
                             </a>
-                        <div class="panel-footer">
+                        <div class="panel2-footer">
                             {{$zapato->description}}
                         </div>
                     </div>

@@ -14,24 +14,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-xs-12 col-sm-12">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="product_item_view">
-                            <img src="/{{$producto->image}}" class="img-responsive"/>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="img-detalle-1">
+                            <div class="nombre2">{{$producto->name}}</div>
+                            <div class="precio2">${{$producto->precio}}</div>
+                            <button class="comprar">Comprar</button>
+                            <img style="width: 100%;" src="/{{$producto->image}}" class="img-detalle-2"/>
                         </div>
                     </div>
                     <!--Product Detail-->
-                    <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="product_detail_view">
                             <div class="pro_heading">
                                 Modelo {{$producto->name}}
 
                                 <span class="new_coll">
-	                             New Collection
-	                             <span id="stock_available">
-	                                 Instock, {{$producto->stock}} disponibles
-	                             </span>
-	                         </span>
+                                 New Collection !!
+                                </span>
 
+                                <span id="stock_available">
+                                     Stock : {{$producto->stock}} pares.
+                                </span>
                             </div>
 
                             <div class="pro_rate">

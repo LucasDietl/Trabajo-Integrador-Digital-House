@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+ background-color: #f0f0f0;
+}
 /* NOTE: Loading screen START -----------------------------------  */
 div#load_screen{
     background: #154360;
@@ -273,14 +276,38 @@ width: 30px;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     z-index: 0;
-    min-height: 361px;
+    min-height: 500px;
+
   }
 
   .growup:hover {
-    -webkit-transform:  scaleX(1.2) scaleY(1.2)  ;
+    /*-webkit-transform:  scaleX(1.2) scaleY(1.2)  ;
     transform:  scaleX(1.2) scaleY(1.2)  ;
-    z-index: 1;
+    z-index: 1;*/
   }
+.img-responsive{
+    opacity: 0.7;
+    -webkit-transform:scale(0.8); /*Webkit: Scale down image to 0.8x original size*/
+    -moz-transform:scale(0.8); /*Mozilla scale version*/
+    -o-transform:scale(0.8); /*Opera scale version*/
+    -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+    /*-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+    /*-o-transition-duration: 0.5s; /*Opera duration version*/
+}
+.img-responsive:hover{
+    opacity: 1;
+    -webkit-transform:scale(1.0); /*Webkit: Scale up image to 1.2x original size*/
+     -moz-transform:scale(1.0); /*Mozilla scale version*/
+     -o-transform:scale(1.0); /*Opera scale version*/
+   /* box-shadow:0px 0px 0px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+    /*-webkit-box-shadow:0px 0px 30px gray; /*Safari shadow version*/
+    /*-moz-box-shadow:0px 0px 30px gray; /*Mozilla shadow version*/
+    border-radius: 28px;
+}
+.opacity{
+    width: 100%;
+    background-color: #000;
+}
 
 /* NOTE: navbar end */
 
@@ -332,7 +359,7 @@ background-size: cover;
     margin-top: 70px;
   }
 .muestra{
-  padding-top: 20px;
+  padding-top: 10%;
 }
 .encabezado{
 display: block;
@@ -616,19 +643,37 @@ ul{
     color: goldenrod;
 }
 .panel-heading{
-   background-color:  lavenderblush;
+  /* background-color:  lavenderblush;*/
 }
-.panel-heading, .panel-footer{
-    border:1px solid black;
-    background-color:  lavenderblush;
+.panel-heading, .panel2-footer{
+    /*border:1px solid black;
+    background-color:  lavenderblush;*/
     color:black;
 }
 .panel-bodyZapatos{
-    border-left:1px solid black;
-    border-right:1px solid black;
+    /*border-left:1px solid black;
+    border-right:1px solid black;*/
+}
+.precio{
+    position: absolute;
+    margin-left: 58%;
+    z-index: 10;
+    background-color: #e03550;
+    color: white;
+    padding: 5px 5px;
+    transform: rotate(16deg);
+}
+.nombre{
+    position: absolute;
+    z-index: 10;
+    background: lavenderblush none repeat scroll 0 0;
+    border: 1px solid #d5d5d5;
+    color: black;
+    padding: 0 5px;
+
 }
 .carusel{
-    max-height: 450px!important;
+    max-height: 370px!important;
 }
 
 .pagination>li>a, .pagination>li>span {
@@ -653,10 +698,28 @@ ul{
     justify-content: center;
 
 }
-
+.format{
+    padding: 20px;
+}
 
 
 /*NOTE Vista Zapatos END----------------------------------------*/
+@media screen and (max-width: 991px) {
+    nav div ul li a {
+        font-size: 15px;
+        padding: 35px 25px!important;
+    }
+    .position{
+        left: 41%;
+        top: 3%;
+    }
+    .precio{
+        margin-left: 45%;
+    }
+
+}
+
+
 @media screen and (max-width: 768px) { /* NOTE: basicamente este media query es para pantallas pequeñas */
   /* NOTE: Home start */
   .growup:hover{
@@ -684,14 +747,8 @@ ul{
 .position{
     left: 34%!important;
 }
-}
-@media screen and (max-width: 990px) {
-    nav div ul li a {
-        font-size: 15px;
-        padding: 35px 25px!important;
-    }
-    .position{
-        left: 41%;
-        top: 3%;
+    .precio{
+        margin-left: 75%;
     }
 }
+
