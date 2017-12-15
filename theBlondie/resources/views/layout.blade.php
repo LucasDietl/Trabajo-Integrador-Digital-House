@@ -23,14 +23,14 @@
 
     <div id="load_screen" >
         <div id="loading">
-            <div class="white position">
+            <div class=" black position">
                 THE<br> BLONDIE
             </div>
-            <div class="sk-folding-cube">
-                <div class="sk-cube1 sk-cube"></div>
-                <div class="sk-cube2 sk-cube"></div>
-                <div class="sk-cube4 sk-cube"></div>
-                <div class="sk-cube3 sk-cube"></div>
+            <div class=" sk-folding-cube">
+                <div class=" sk-cube1 sk-cube"></div>
+                <div class=" sk-cube2 sk-cube"></div>
+                <div class=" sk-cube4 sk-cube"></div>
+                <div class=" sk-cube3 sk-cube"></div>
             </div>
         </div>
     </div>
@@ -52,37 +52,39 @@
 
             <div class="collapse navbar-collapse border" id="navbar1">
                 <div class="text-center">
-                    <a class="hidden-xs" style=" color:grey;" href="{{ route('home') }}">#Neverpony</a>
+                    <a class="hidden-xs " style=" color:grey;" href="{{ route('home') }}">#Neverpony</a>
                 </div>
                 <div class="container-fluid">
                     <div class="row ">
-                        <div class="col-sm-4">
+                        <div class="col-sm-6 col-sm-offset-3">
                             @if(Auth::check())
                                 <ul class="inline">
-                                    <li class="inlineblock" >
-                                        <a href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                    document.getElementById('logout-form').submit();">
-                                        Logout
-                                        </a>
-                                    </li>
-                                    <a href="/Opciones"> <li class="inlineblock white">Bienvenido {{Auth::user()->name}}</li></a>
+                                    <button class="btn btn-primary ">
+                                        <li class="inlineblock" >
+                                            <a class="small" href="{{ route('logout') }}"
+                                                   onclick="event.preventDefault();
+                                                   document.getElementById('logout-form').submit();">
+                                                Logout
+                                            </a>
+                                        </li>
+                                    </button>
+                                    <a class="aStyle" href="/Opciones"> <li class="inlineblock white">Bienvenido {{Auth::user()->name}}</li></a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}
                                     </form>
-                                </ul>
+
                             @else
-                            <ul>
-                                <li class="inlineblock" ><a href="{{ route('login') }}">Log In</a></li>
-                                <li class="inlineblock" ><a href="{{ route('register') }}">Register</a></li>
+                            <ul id="btnOption">
+                                <button class="btn btn-primary "><li class="inlineblock" ><a class="small" href="{{ route('login') }}">Log In</a></li></button>
+                                <button class="btn btn-primary "><li class="inlineblock" ><a class="small" href="{{ route('register') }}">Register</a></li></button>
                             </ul>
                                 @endif
+
+                            @if(Auth::check())
+                                <a class=""  href="/Opciones"> <li class="inlineblock white">  Opcioes para Administradores </li></a>
+                            </ul>
+                            @endif
                         </div>
-                        @if(Auth::check())
-                            <div class="col-sm-4 hidden-xs paddingtop">
-                            <a href="/Opciones"> <li class="inlineblock white">  Opcioes para Administradores </li></a>
-                        </div>
-                        @endif
                         <!--<div class="col-sm-4 hidden-xs">
                             <div class="">
                                 <form class="navbar-form" role="search" method="get" action="{{ route('zapatos') }}">
@@ -116,9 +118,9 @@
 
                         <ul class="nav navbar-nav inline">
                             <li class="active inlineblock"> <span class="sr-only">(current)</span></li>
-                            <li class="inlineblock"><a href="{{ route('home') }}">Home</a></li>
-                            <li class="inlineblock"><a href="/zapatos">Zapatos</a></li>
-                            <li class="inlineblock"><a href="/faq">Preguntas Frecuentes</a></li>
+                            <li class="inlineblock"><a class="aStyle"  href="{{ route('home') }}">Home</a></li>
+                            <li class="inlineblock"><a class="aStyle"  href="/zapatos">Zapatos</a></li>
+                            <li class="inlineblock"><a class="aStyle" href="/faq">Preguntas Frecuentes</a></li>
                         </ul>
                     </div>
                     <div class="col-md-2 hidden-xs hidden-sm text-center iconos">
@@ -168,10 +170,10 @@
 
 
                         <ul class="nav navbar-nav inline">
-                            <li class="active inlineblock"> <span class="sr-only">(current)</span></li>
-                            <li class="inlineblock"><a href="{{ route('home') }}">Home</a></li>
-                            <li class="inlineblock"><a href="/zapatos">Zapatos</a></li>
-                            <li class="inlineblock"><a href="/faq">Preguntas Frecuentes</a></li>
+                            <li class="active inlineblock "> <span class="sr-only">(current)</span></li>
+                            <li class="inlineblock"><a class="aStyle" href="{{ route('home') }}">Home</a></li>
+                            <li class="inlineblock"><a class="aStyle" href="/zapatos">Zapatos</a></li>
+                            <li class="inlineblock"><a class="aStyle" href="/faq">Preguntas Frecuentes</a></li>
                         </ul>
                     </div>
                     <div class="col-md-2 hidden-xs hidden-sm text-center iconos">
