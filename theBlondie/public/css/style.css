@@ -24,7 +24,7 @@ div#load_screen{
 }
 .black{
 
-    color:black!;
+    color:black;
 
 }
 
@@ -582,6 +582,36 @@ text-align: center;
 }
 /* NOTE: sign in end */
 
+/* NOTE: OPCIONES ADMIN START -------------------------------------------------------------------- */
+
+.option{
+
+    background-color: white;
+    box-shadow: 0 3px 25px #666666;
+    padding: 30px;
+    border-radius: 3px;
+
+}
+
+.optionLi{
+    border-bottom: 1px solid grey ;
+    margin-bottom: 20px;
+}
+#optionH1{
+    color: #5aa1ea;
+}
+
+.optionAdmin{
+    color: #000;
+}
+.optionAdmin:hover{
+    text-decoration: none;
+    color: black;
+}
+
+/* NOTE: OPCIONES ADMIN END -------------------------------------------------------------------- */
+
+
 /* NOTE: footer start */
 footer{
   background: linear-gradient(to left,black ,black);
@@ -710,6 +740,9 @@ ul{
 }
 /*NOTE Vista SeleccionarID END----------------------------------------*/
 
+
+
+
 /*NOTE Vista Zapatos START----------------------------------------*/
 .zapatosmargen{
     padding-top:50px;
@@ -748,7 +781,10 @@ ul{
 
 }
 .carusel{
-    max-height: 370px!important;
+    max-height: 500px!important;
+}
+.carousel-caption{
+    top:3%;
 }
 
 .pagination>li>a, .pagination>li>span {

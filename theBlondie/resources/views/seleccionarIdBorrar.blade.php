@@ -4,9 +4,9 @@
 @endsection
 @section('content')
     <div class="container  slideimages altominimo">
-        <div class="centrado">
-            <h1>Selecione el Id del Producto a Eliminar</h1>
-            <p>Una vez eliminado el mismo no se podra rescatar</p>
+        <div class="centrado option">
+            <h1 style="color: #000;">Selecione el Id del Producto a Eliminar</h1>
+            <p style="color: #000;">Una vez eliminado el mismo no se podra rescatar</p>
             <form class="form-horizontal" method="POST" action="/Productos/Borrar" >
                 {{csrf_field()}}
                 <div class="form-group">

@@ -33,7 +33,7 @@
                                 <span id="stock_available">
                                      Stock : {{$producto->stock}} pares.
                                 </span>
-                                <button class="comprar">Comprar</button>
+                                <button  class="comprar disabled">Comprar</button>
                             </div>
 
                             <div class="pro_rate">

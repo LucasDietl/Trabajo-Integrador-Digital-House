@@ -25,26 +25,26 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item carusel active">
-                        <img src="{{$zapato1->image}}" alt="Los Angeles" style="width:100%;">
+                        <img src="{{asset('images/comingsoon.jpg')}}" alt="" style="width:100%;">
                             <div class="carousel-caption">
-                                <h3>The Blondie - Shoes</h3>
-                                <p>Thank you!</p>
+                                <h3 style="color: #000;">The Blondie - Shoes</h3>
+                                <p style="color: #000;">Thank you!</p>
                             </div>
                     </div>
 
                     <div class="item carusel">
-                        <img src="{{asset('images/summer18.jpg')}}" alt="Chicago" style="width:100%;">
+                        <img src="{{asset('images/summer18.jpg')}}" alt="" style="width:100%;">
                             <div class="carousel-caption">
-                                <h3>The Blondie - Shoes</h3>
-                                <p>LOV3</p>
+                                <h3 style="color: #000;">The Blondie - Shoes</h3>
+                                <p style="color: #000;" >LOV3</p>
                             </div>
                     </div>
 
                     <div class="item carusel">
-                        <img src="{{asset('images/cactuswide.jpg')}}" alt="New york" style="width:100%;">
+                        <img src="{{asset('images/cactuswide.jpg')}}" alt="" style="width:100%;">
                             <div class="carousel-caption">
-                                <h3>The Blondie - Shoes</h3>
-                                <p>Good Times!!</p>
+                                <h3 style="color: #000;">The Blondie - Shoes</h3>
+                                <p style="color: #000;">Good Times!!</p>
                             </div>
                     </div>
                 </div>
