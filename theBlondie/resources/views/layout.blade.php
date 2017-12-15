@@ -5,7 +5,7 @@
     <!-- NOTE: incluye el icono en la pestaña del navegador (Favicon)-->
     @yield('title')
     <link rel="icon" type="image/png" href="{{asset('images/favicon.png')}}">
-    <meta name="viewport"content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney|Yesteryear|Raleway|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
@@ -193,7 +193,7 @@
 
     @yield('content')
     <footer class="navbar navbar-default navbar-bottom" role="navigation">
-        <div class="container-fluid hidden-xs">
+        <!--<div class="container-fluid hidden-xs">
             <div class="row">
                 <div class="col-sm-4">
                     <h3>Get started</h3>
@@ -220,10 +220,10 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="copyright">
             <div class="container">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <p>© 2017 - Todos los derechos reservados - Developed by #NeverPony!</p>
                 </div>
             </div>

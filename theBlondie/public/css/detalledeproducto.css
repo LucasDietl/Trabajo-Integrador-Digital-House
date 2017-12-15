@@ -1,11 +1,19 @@
 .prod_page{
-    float:left; width:100%;
+    
+    float:left; 
+    width:100%;
 }
 
-.product_item_view{float:left; width:100%; margin-top:40%;}
+.product_item_view{
+    
+    float:left;
+    width:100%;
+    margin-top:40%;
+}
 
 
 .product_detail_view{
+    
     float:left;
     width:100%;
     box-shadow:0 0 3px #aaa;
@@ -16,14 +24,19 @@
 }
 
 .pro_heading{
+    
     float:left;
     width:100%;
     font-size:45px;
     font-weight:normal;
     font-family: 'Allerta', sans-serif;
+    padding-left: 10%;
+    color: black;
 }
 
-.new_coll{float:left;
+.new_coll{
+    
+    float:left;
     width:100%;
     font-size:18px;
     font-style:italic;
@@ -32,15 +45,18 @@
 }
 
 #stock_available {
-    color:red;
+    
+    color: #131aff;
     font-size:18px;
     font-weight:500;
     font-style:normal;
     text-decoration:none !important;
-    padding:5%;
+    padding:5% 5% 5% 0;
 }
 
-.pro_rate{float:left;
+.pro_rate{
+    color: #000;
+    float:left;
     width:100%;
     margin:15px 0;
     padding-left:10%;
@@ -48,39 +64,58 @@
     font-style:italic;
 }
 
-.color_quantity{width:80%;float:left; margin-left:10%; border-top:1px solid #aaa; border-bottom:1px solid #aaa; height:70px; padding:10px;margin-bottom:30px;}
+.color_quantity{
+    
+    width:80%;
+    float:left;
+    margin-left:10%;
+    border-top:1px solid #aaa;
+    border-bottom:1px solid #aaa;
+    margin-bottom:30px;
+}
 
-.color{width:35%; float:left;}
+.color{
+    width:35%;
+    float:left;
+    color: #000;
+}
 
 .color_select{float:left; width:50%; margin-left:10px;margin-top:10px;}
 
 .color_select li{float:left; width:7%; text-align:center; padding:0 10px;}
 
-#red{    width: 15px;
+#red{
+
+    width: 15px;
     height: 15px;
     background-color: red;
     float: left;
-    border-radius: 1em;}
+    border-radius: 1em;
+}
 
-#green{width:15px; height:15px; background:green;   background-color: green;
+#green{width:15px;
+    height:15px;
+    background:green;
+    background-color: green;
     float: left;
-    border-radius: 1em;}
+    border-radius: 1em;
+}
 
-#black{width:15px; height:15px; background:black;   background-color: black;
+#black{width:15px;
+    height:15px;
+    background:black;
+    background-color: black;
     float: left;
-    border-radius: 1em;}
+    border-radius: 1em;
+}
 
-.color span{    float: left;
+.color span{
+    float: left;
     margin-bottom: 2px;
     width: 100%;
 }
 
-.slash{    float: left;
-    width: 5%;
-    font-size: 75px;
-    padding-right: 3;
-    margin: 0;
-    line-height: 0.6;}
+
 
 .quantity{float:left; width:45%;}
 
@@ -117,11 +152,7 @@
 }
 
 .comprar{
-    position: absolute;
-    z-index: 10;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%,-20%);
+    
     box-shadow: rgb(159, 180, 242) 0px 0px 0px 2px;
     background: linear-gradient(rgb(120, 146, 194) 5%, rgb(71, 110, 158) 100%) rgb(120, 146, 194);
     border-radius: 10px;
@@ -134,4 +165,14 @@
     padding: 12px 20px;
     text-decoration: none;
     text-shadow: rgb(40, 57, 102) 0px 1px 0px;
+}
+
+.black{
+    color: black;
+}
+.black:hover{
+    color: #000;
+}
+.tab-pane p{
+    padding-left: 2%;
 }

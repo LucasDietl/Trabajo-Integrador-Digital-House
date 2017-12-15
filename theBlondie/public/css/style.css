@@ -118,6 +118,10 @@ div#load_screen{
 }
 /* NOTE: Loading screen END -----------------------------------  */
 
+
+
+
+
 /* NOTE: navbar sart  #000000 #606060 #e6b1a9 #fae5e2 rgb(190, 143, 108) */
 .navbarcolor{
   background: #000000!important;
@@ -146,9 +150,10 @@ nav div ul li a{
   padding: 15px 0;
 }
 .padding_SignInAndUp{
-  padding: 70px 0;
-}
 
+  padding: 70px 0;
+
+}
 
 .btnbuscar {
   background: #eb28e4;
@@ -311,6 +316,61 @@ width: 30px;
 
 /* NOTE: navbar end */
 
+
+
+/* NOTE LOG IN START ----------------------------------------------------*/
+.boss{
+
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+
+}
+.child {
+
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+
+}
+
+#top{
+    margin-top: 100px;
+}
+#bglogin{
+    background-image: url("../images/loginbg3.jpg");
+    background-repeat: no-repeat;
+background-size: cover;
+}
+.glass{
+    color: white;
+    border: none;
+    background: none;
+    min-height: 350px;
+}
+
+.glass:before{
+    content: " ";
+    background: inherit;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /*box-shadow: inset 0 0 0 3000px rgba(0, 44, 234, 0.36);*/
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    filter: blur(10px);
+
+
+
+}
+
+/* NOTE LOG IN END ----------------------------------------------------*/
+
 /* NOTE: Contenido home Start */
 .bgcolorhome{
   background-color: white;
@@ -373,7 +433,7 @@ text-align: center;
 
 /* NOTE: sign in start ------------------------------------------------------------------ */
 .altominimo{
-  min-height: 633px;
+  min-height: 754px;
 }
 
 
